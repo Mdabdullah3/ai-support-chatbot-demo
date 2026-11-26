@@ -1,0 +1,22 @@
+# Secrets and local clutter. Never commit a real API key.
+.env
+.env.local
+.env.*.local
+
+# Dependencies and Vercel internals.
+node_modules/
+.vercel/
+
+# OS and editor files.
+.DS_Store
+Thumbs.db
+*.log
+
+
+
+
+
+
+
+
+
