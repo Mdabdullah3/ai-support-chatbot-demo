@@ -69,12 +69,12 @@
           '<div class="card-img" style="background:' +
           GRADIENTS[p.id] +
           '">' +
-          '<span class="stock-flag">' +
-          stockBadge(p) +
-          "</span>" +
           initials(p.name) +
           "</div>" +
           '<div class="card-body">' +
+          '<div class="card-flag">' +
+          stockBadge(p) +
+          "</div>" +
           "<h3>" +
           p.name +
           "</h3>" +
