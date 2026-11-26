@@ -13,6 +13,7 @@ const STORE = {
   products: [
     {
       id: "tee",
+      image: "https://static.vecteezy.com/system/resources/previews/053/099/935/non_2x/white-cotton-blank-t-shirt-free-photo.jpg",
       name: "Essential Cotton Tee",
       price: 28,
       stock: 14,
@@ -26,6 +27,7 @@ const STORE = {
     },
     {
       id: "wallet",
+      image: "https://www.solesurvivorleather.com/cdn/shop/products/bifold_cognac.jpg?v=1661971752&width=1445",
       name: "Leather Wallet",
       price: 49,
       stock: 0,
@@ -39,6 +41,7 @@ const STORE = {
     },
     {
       id: "mug-set",
+      image: "https://www.ceramic-mug-manufacturers.com/wp-content/uploads/2025/10/Antique-Colored-Glaze-Ceramic-Mug-Set-for-Couples-and-Coffee-Lovers-6.jpg",
       name: "Ceramic Mug Set",
       price: 36,
       stock: 9,
@@ -52,6 +55,7 @@ const STORE = {
     },
     {
       id: "candle",
+      image: "https://scentcask.com/wp-content/uploads/2026/08/hero-au-05.jpg",
       name: "Scented Candle",
       price: 24,
       stock: 21,
@@ -65,6 +69,7 @@ const STORE = {
     },
     {
       id: "tote",
+      image: "https://notebooktherapy.com/cdn/shop/products/6_871483aa-7363-45ca-8888-5dfa5aac070b.jpg?v=1634926883",
       name: "Canvas Tote Bag",
       price: 32,
       stock: 12,
@@ -78,6 +83,7 @@ const STORE = {
     },
     {
       id: "blanket",
+      image: "https://assets.purewow.com/wp-content/uploads/2024/02/warmest-blankets-4.jpg",
       name: "Wool Throw Blanket",
       price: 68,
       stock: 5,

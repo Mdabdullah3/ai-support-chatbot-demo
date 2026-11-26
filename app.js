@@ -69,7 +69,14 @@
           '<div class="card-img" style="background:' +
           GRADIENTS[p.id] +
           '">' +
+          '<span class="card-initials">' +
           initials(p.name) +
+          "</span>" +
+          '<img class="card-photo" src="' +
+          p.image +
+          '" alt="' +
+          p.name +
+          '" loading="lazy" onerror="this.remove()">' +
           "</div>" +
           '<div class="card-body">' +
           '<div class="card-flag">' +
@@ -299,6 +306,11 @@
           '<div class="cart-thumb" style="background:' +
           GRADIENTS[p.id] +
           '">' +
+          '<img class="cart-photo" src="' +
+          p.image +
+          '" alt="' +
+          p.name +
+          '" loading="lazy" onerror="this.remove()">' +
           initials(p.name) +
           "</div>" +
           "<div><h4>" +
