@@ -1,0 +1,1 @@
+{"description":"Loom & Co. demo store with an AI support chatbot, Luna, powered by the free Nemotron model through the Kilo AI Gateway.","engines":{"node":">=18"},"name":"ai-support-chatbot-demo","private":true,"version":"1.0.0"}

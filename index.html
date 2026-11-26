@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loom &amp; Co. - Everyday goods, made to last</title>
+  <meta name="description" content="Loom & Co. is a demo store with an AI support chatbot. Shop everyday goods and ask Luna anything about products, orders and shipping.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="announce">Free standard shipping on orders over $75 - Use code WELCOME10 for 10% off your first order</div>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="#">Loom <span>&amp;</span> Co.</a>
+      <nav class="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#track">Track order</a>
+        <a href="#policies">Good to know</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <label class="nav-search">
+        <span aria-hidden="true">&#128269;</span>
+        <input id="navSearch" type="search" placeholder="Search products" aria-label="Search products">
+      </label>
+      <button class="bag-btn" id="bagBtn" type="button">
+        Bag <span class="bag-count" id="bagCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1>Everyday goods, made to last.</h1>
+        <p>Soft cotton tees, solid leather, honest homeware. Small batches, fair prices, and support that actually answers.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#shop" style="text-decoration:none">Shop the collection</a>
+          <button class="btn btn-ghost" id="heroAskBtn" type="button">Ask Luna</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="swatch" id="heroSwatch" style="background: linear-gradient(135deg, #c98a5e, #8a5a34);"></div>
+        <h3>Featured: Leather Wallet</h3>
+        <p>Full-grain leather, 6 card slots, slim enough for any pocket. Our most asked about piece.</p>
+        <div class="hero-price">
+          <strong>$49</strong>
+          <span class="badge badge-red">Sold out</span>
+        </div>
+        <div style="margin-top:14px">
+          <button class="btn btn-ghost" id="heroAskWallet" type="button">Ask Luna about it</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="benefits">
+      <div class="benefit"><strong>Free shipping over $75</strong><span>Standard delivery, no code needed.</span></div>
+      <div class="benefit"><strong>30-day returns</strong><span>Unused, in original packaging.</span></div>
+      <div class="benefit"><strong>Real human support</strong><span>Luna answers fast, humans take over when needed.</span></div>
+      <div class="benefit"><strong>Secure checkout</strong><span>Cards, PayPal, Shop Pay and Apple Pay.</span></div>
+    </div>
+
+    <section id="shop">
+      <div class="section-head">
+        <h2>Shop the collection</h2>
+        <p>6 everyday pieces, each one made to earn its place.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-category="All" type="button">All</button>
+        <button class="filter-btn" data-category="Apparel" type="button">Apparel</button>
+        <button class="filter-btn" data-category="Accessories" type="button">Accessories</button>
+        <button class="filter-btn" data-category="Home" type="button">Home</button>
+        <input class="shop-search" id="shopSearch" type="search" placeholder="Search the shop" aria-label="Search the shop">
+      </div>
+      <div class="grid" id="productGrid" style="margin-top:20px"></div>
+    </section>
+
+    <section id="track">
+      <div class="section-head">
+        <h2>Track your order</h2>
+        <p>Enter your order number to see where it is.</p>
+      </div>
+      <div class="track-box">
+        <div class="track-form">
+          <label for="trackInput">Order number</label>
+          <div class="row">
+            <input id="trackInput" type="text" placeholder="e.g. 1001" inputmode="numeric">
+            <button class="btn btn-primary" id="trackBtn" type="button">Track</button>
+          </div>
+          <p class="track-hint">Demo orders to try: 1001 (shipped), 1002 (delivered), 1003 (processing).</p>
+        </div>
+        <div class="track-result" id="trackResult">
+          <h3>Your order status will show here.</h3>
+          <p>We update tracking as soon as the carrier scans your parcel.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="policies">
+      <div class="section-head">
+        <h2>Good to know</h2>
+        <p>The short version of how we work.</p>
+      </div>
+      <div class="policy-grid" id="policyGrid"></div>
+    </section>
+
+    <section id="faq">
+      <div class="section-head">
+        <h2>Questions, answered</h2>
+        <p>Still stuck? Ask Luna, she is in the corner.</p>
+      </div>
+      <div id="faqList"></div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Loom &amp; Co.</h4>
+          <p>Everyday goods, made to last. A small demo store built to show what an AI support chatbot can do for a real shop.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="#shop">All products</a>
+          <a href="#shop">Apparel</a>
+          <a href="#shop">Accessories</a>
+          <a href="#shop">Home</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="#track">Track order</a>
+          <a href="#policies">Shipping and returns</a>
+          <a href="#faq">FAQ</a>
+          <a href="#" id="footerHumanLink">Talk to a human</a>
+        </div>
+      </div>
+      <p class="demo-note">Demo store. All products, prices, stock levels, orders and policies on this page are sample data for demonstration only. Nothing here is for sale and no real payment is taken. The chatbot answers from this sample data, and when the free AI model is available it answers through the Kilo AI Gateway.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping bag">
+    <div class="drawer-head">
+      <h3>Your bag</h3>
+      <button class="icon-btn" id="drawerClose" type="button" aria-label="Close bag">&#10005;</button>
+    </div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot" id="cartFoot" style="display:none">
+      <p class="ship-progress" id="shipProgress"></p>
+      <div class="progress-bar"><div class="progress-fill" id="shipFill" style="width:0%"></div></div>
+      <div class="subtotal"><span>Subtotal</span><span id="subtotalVal">$0</span></div>
+      <button class="checkout-btn" id="checkoutBtn" type="button">Checkout</button>
+      <p class="demo-checkout">Demo checkout. No payment is taken and no order is placed.</p>
+    </div>
+  </aside>
+
+  <!-- Ask Luna chat widget -->
+  <button class="chat-fab" id="chatFab" type="button">
+    <span class="dot"></span>
+    <span>&#128172;</span> Ask Luna
+  </button>
+
+  <div class="chat-panel" id="chatPanel" aria-label="Ask Luna chat">
+    <div class="chat-head">
+      <div class="chat-avatar">L</div>
+      <div class="chat-title">
+        <strong>Ask Luna</strong>
+        <span><span class="dot"></span> Online, replies in a moment</span>
+      </div>
+      <span class="chat-live" id="chatLiveBadge">AI live</span>
+      <button class="chat-close" id="chatClose" type="button" aria-label="Close chat">&#10005;</button>
+    </div>
+
+    <div class="chat-body" id="chatBody"></div>
+
+    <div class="chips" id="chatChips">
+      <button class="chip" type="button">Where is order 1001?</button>
+      <button class="chip" type="button">Is the leather wallet in stock?</button>
+      <button class="chip" type="button">Recommend a gift under $30</button>
+    </div>
+
+    <div class="chat-human">
+      <button id="humanLink" type="button">Talk to a human instead</button>
+    </div>
+
+    <div class="chat-input">
+      <input id="chatInput" type="text" placeholder="Ask about a product, order, shipping..." aria-label="Ask Luna a question">
+      <button class="send-btn" id="chatSend" type="button" aria-label="Send">&#10148;</button>
+    </div>
+
+    <div class="handoff" id="handoffForm">
+      <h3>Talk to a human</h3>
+      <p>Leave your email and a short note. This is a demo, so nobody will actually reply, but your note is saved in this browser only.</p>
+      <label for="handoffName">Your name</label>
+      <input id="handoffName" type="text" placeholder="Your name">
+      <label for="handoffEmail">Email</label>
+      <input id="handoffEmail" type="email" placeholder="you@example.com">
+      <label for="handoffMsg">What do you need help with?</label>
+      <textarea id="handoffMsg" rows="3" placeholder="Tell us briefly..."></textarea>
+      <div class="row">
+        <button class="btn btn-ghost" id="handoffCancel" type="button">Back to chat</button>
+        <button class="btn btn-primary" id="handoffSend" type="button">Send request</button>
+      </div>
+      <p id="handoffDone" style="display:none; color: var(--green); font-weight: 650;">Thanks, your request is saved in this browser (demo only). The team would reply within one business day on a real store.</p>
+    </div>
+  </div>
+
+  <script src="store.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
